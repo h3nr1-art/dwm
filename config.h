@@ -31,6 +31,7 @@ static const char *const autostart[] = {
 	"/bin/sh", "-c", "xsetroot -name Sporus", NULL,
 	"/bin/sh", "-c", "$HOME/git/dwm/scripts/WallpaperDefault.sh", NULL,
 	"/bin/sh", "-c", "xrandr --output HDMI-0 --mode 1920x1080 --rate 75 --left-of DP-3 --primary", NULL,
+	"/bin/sh", "-c", "dwmbar &", NULL,
 
 };
 
