@@ -31,7 +31,10 @@ static const char *const autostart[] = {
 	"/bin/sh", "-c", "xsetroot -name Sporus", NULL,
 	"/bin/sh", "-c", "$HOME/git/dwm/scripts/WallpaperDefault.sh", NULL,
 	"/bin/sh", "-c", "xrandr --output HDMI-0 --mode 1920x1080 --rate 75 --left-of DP-3 --primary", NULL,
-	"/bin/sh", "-c", "dwmbar &", NULL,
+  "/bin/sh", "-c", "~/git/dwm-bar/dwm_bar.sh", NULL,
+  "/bin/sh", "-c", "xscreensaver --no-splash", NULL,
+  "/bin/sh", "-c", "picom --config ~/.config/picom/picom.conf", NULL,
+
 
 };
 
@@ -121,9 +124,12 @@ static const Key keys[] = {
   //personnal Button 
   {Mod1Mask,               XK_v,      spawn,          SHCMD("firefox")},
   {Mod1Mask,               XK_t,      spawn,          SHCMD("vesktop")},
+  {Mod1Mask,               XK_p,     spawn,          SHCMD("amixer set Master 10%+ 10%+")},
+  {Mod1Mask,               XK_semicolon,     spawn,          SHCMD("amixer set Master 10%- 10%-")},
   {Mod1Mask,               XK_s,      spawn,          SHCMD("spotify")},
   {Mod1Mask,               XK_a,      spawn,          SHCMD("steam")},
   {Mod1Mask,               XK_x,      spawn,          SHCMD("flameshot gui")},
+  {Mod1Mask,               XK_slash,      spawn,          SHCMD("xscreensaver-command -lock")},
   {Mod1Mask|ShiftMask,               XK_m,      spawn,          SHCMD("./git/dwm/scripts/WallpaperRandom.sh")},
   {Mod1Mask|ControlMask,               XK_m,      spawn,          SHCMD("./git/dwm/scripts/WallpaperSelect.sh")},
 

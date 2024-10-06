@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wal -i $HOME/wallpaper/forest-bed.png
+wal -i $HOME/.cache/wallpaper_link
 sleep 0.2
 pywal-zathura
 pywalfox update

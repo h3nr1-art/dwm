@@ -7,6 +7,7 @@ scriptsDir="$HOME/.config/hypr/scripts"
 
 PICS=($(find ${wallDIR} -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.gif" \)))
 RANDOMPICS=${PICS[$RANDOM % ${#PICS[@]}]}
+ln -s -f ${RANDOMPICS} "${HOME}/.cache/wallpaper_link"
 
 # Transition config
 
