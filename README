@@ -1,3 +1,4 @@
 dwm - dynamic window manager
 ============================
-Just my personnal config, it's pywal compatible and has the cool auto-start
+Just my personnal config, it's pywal compatible and has the cool auto-start patch. 
+It's also pywal compatible, you just need to add the pywal template for dwm.
